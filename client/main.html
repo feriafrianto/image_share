@@ -13,7 +13,7 @@
 <template name="images">
   <div class="ui link cards">
     {{#each images}}
-    <div class="card">
+    <div class="card" id="{{_id}}">
     <div class="image">
       <img class="js-image" src="{{img_src}}">
     </div>
@@ -32,7 +32,7 @@
       </span>
       <span>
         <i class="user icon"></i>
-        <button class="ui button">Negative Button</button>
+        <button class="js-del-image ui button">Delete</button>
       </span>
     </div>
   </div>
