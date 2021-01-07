@@ -1,0 +1,41 @@
+<head>
+  <title>image_share</title>
+</head>
+
+<body>
+  <h1>Welcome to Web Feri!</h1>
+  <div class="container">
+    {{> images}}
+  </div>
+  
+</body>
+
+<template name="images">
+  <div class="ui link cards">
+    {{#each images}}
+    <div class="card">
+    <div class="image">
+      <img class="js-image" src="{{img_src}}">
+    </div>
+    <div class="content">
+      <div class="header">Feri Afrianto 2</div>
+      <div class="meta">
+        <a>Friends</a>
+      </div>
+      <div class="description">
+        Feri adalah Mahasiswa PENS.
+      </div>
+    </div>
+    <div class="extra content">
+      <span class="right floated">
+        Liburan Ceria
+      </span>
+      <span>
+        <i class="user icon"></i>
+        <button class="ui button">Negative Button</button>
+      </span>
+    </div>
+  </div>
+    {{/each}}
+  </div>
+</template>
